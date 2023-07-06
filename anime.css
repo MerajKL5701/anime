@@ -103,3 +103,17 @@
     scale: -1;
 
 }
+/* recommendted  */
+.recommented{
+    height: 500px;
+    background-color: green;
+    width: 100%;
+    /* overflow: hidden; */
+    
+}
+.recommented .slider{
+    overflow-y: hidden;
+    overflow-x: scroll;
+    height: 400px;
+
+}
