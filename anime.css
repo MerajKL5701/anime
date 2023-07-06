@@ -1,0 +1,102 @@
+*{
+    margin: 0;padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    /* outline: 50px black solid; */
+}
+.hero{
+    height: 100vh;
+    overflow: hidden;
+    width: 100vw;
+    /* overflow: hidden; */
+    position: relative;
+}
+.positon{
+    grid-template-columns: repeat(5,1fr);
+    display: grid;
+    animation: heroMove 30000ms  infinite ;
+    
+  
+}
+
+.subhero::before{
+    content: "";
+    background: linear-gradient(
+        hsla(0, 0%, 0%,0.2),
+        black
+    );
+    position: absolute;
+    height: 100vh;
+    
+    width: 100%;
+}
+.subhero .innertext{
+    width: 800px;
+    position: absolute;
+    overflow: hidden;
+    bottom: 20%;
+    left: 50px;
+
+}
+.subhero{
+    position: relative;
+    height: 100vh;
+    color: white;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: blue;
+    background-image: url(Herobg.png);
+}
+.subhero h1{
+    font-size: 100px;
+}
+
+
+
+.subhero h3{
+    font-size: 40px;
+    color: red;
+}
+@keyframes heroMove {
+    0%{
+        translate: 0% 0%;
+    }
+    19%{
+        translate: 0% 0%;
+    }
+    20%{
+        translate: -100% 0%;
+    }
+    39%{
+        translate: -100% 0%;
+    }
+    40%{
+        translate: -200% 0%;
+    }
+    59%{
+        translate: -200% 0%;
+    }
+    60%{
+        translate: -300% 0%;
+    }
+    79%{
+        translate: -300% 0%;
+    }
+    80%{
+        translate: -400% 0%;
+    }
+    99%{
+        translate: -400% 0%;
+    }
+    100%{
+        translate: 0% 0%;
+    }
+}
+.subhero a{
+    color: white;
+    font-size: 50px;
+    translate: 0% 200%;
+    background-color: black;
+    /* padding: 25px; */
+}
