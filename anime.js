@@ -16,6 +16,7 @@ function BGherotranslatefor() {
     }
     bg[0].style.transform = `translate(${bgsupport * -50}%, 0%)`;
 }
+// he 
 function BGherotranslateBac() {
     console.log("bgsupoort " + bgsupport + "subhero " + subHero.length);
     if (bgsupport > 0) {

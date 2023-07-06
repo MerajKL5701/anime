@@ -85,10 +85,10 @@
 /* subhero button  */
 .HeroButton{
     position: absolute;
-    bottom: 120px;
+    bottom: 50px;
     right: 25px;
     z-index: 1;
-    width: 15px;
+    width: 85px;
     aspect-ratio: 1/1;
     background: linear-gradient(90deg,white,black);
     transition: 500ms;
