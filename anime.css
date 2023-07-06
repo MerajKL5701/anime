@@ -1,102 +1,105 @@
 *{
-    margin: 0;padding: 0;
+    padding: 0;margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
-    /* outline: 50px black solid; */
+}
+:root{
+    --mainasset: 0,100%,50%;
+    --mainwhite: 0, 0%, 100%;
+    --mainblack: 0, 0%, 0%;
 }
 .hero{
-    height: 100vh;
-    overflow: hidden;
     width: 100vw;
-    /* overflow: hidden; */
+    overflow: hidden;
+    height: 315px;
     position: relative;
+
 }
-.positon{
-    grid-template-columns: repeat(5,1fr);
+.bg{
     display: grid;
-    animation: heroMove 30000ms  infinite ;
-    
-  
-}
-
-.subhero::before{
-    content: "";
-    background: linear-gradient(
-        hsla(0, 0%, 0%,0.2),
-        black
-    );
-    position: absolute;
-    height: 100vh;
-    
-    width: 100%;
-}
-.subhero .innertext{
-    width: 800px;
-    position: absolute;
-    overflow: hidden;
-    bottom: 20%;
-    left: 50px;
+    grid-template-columns: repeat(5,100vw);
+    width: 200vw;
+    transition: 2000ms;
 
 }
-.subhero{
-    position: relative;
-    height: 100vh;
-    color: white;
+
+
+
+    /* subhero  */
+    .sub-hero{
     width: 100vw;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: blue;
+    height: 315px;
     background-image: url(Herobg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
 }
-.subhero h1{
-    font-size: 100px;
-}
+/* subhero black  */
+.sub-hero .black{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg,hsla(var(--mainblack),0.7),hsla(var(--mainblack),0.2));
+    z-index: 1;
 
-
-
-.subhero h3{
-    font-size: 40px;
-    color: red;
 }
-@keyframes heroMove {
-    0%{
-        translate: 0% 0%;
-    }
-    19%{
-        translate: 0% 0%;
-    }
-    20%{
-        translate: -100% 0%;
-    }
-    39%{
-        translate: -100% 0%;
-    }
-    40%{
-        translate: -200% 0%;
-    }
-    59%{
-        translate: -200% 0%;
-    }
-    60%{
-        translate: -300% 0%;
-    }
-    79%{
-        translate: -300% 0%;
-    }
-    80%{
-        translate: -400% 0%;
-    }
-    99%{
-        translate: -400% 0%;
-    }
-    100%{
-        translate: 0% 0%;
-    }
+/* subhero heading  */
+.sub-hero h6{
+    font-size: 15px;
+    position: absolute;
+    bottom: 500px;
+    color: hsl(var(--mainwhite));
+    left: 5%;
+    bottom: 140px;
+
 }
-.subhero a{
-    color: white;
+.sub-hero h5{
+    min-width: 70vw;
     font-size: 50px;
-    translate: 0% 200%;
-    background-color: black;
-    /* padding: 25px; */
+    color: hsl(var(--mainasset));
+    position: absolute;
+    left: 5%;
+    bottom: 75px;
+
+}
+/* subhero a  */
+.sub-hero a{
+    font-size: 15px;
+    padding: 10px 10px;
+    text-decoration: none;
+    border: 5px black solid;
+    display: inline-block;
+    border-radius: 100px;
+    position: absolute;
+    bottom: 25px;
+    background-color: hsla(var(--mainwhite),0.3);
+    left: 150px;
+    color: black;
+    /* height:50px; */
+}
+.sub-hero .watch{
+    color: gray;
+    left: 5%;
+    color: white;
+    background-color: hsl(var(--mainasset));
+    
+}
+/* subhero button  */
+.HeroButton{
+    position: absolute;
+    bottom: 120px;
+    right: 50px;
+    z-index: 1;
+    width: 50px;
+    aspect-ratio: 1/1;
+    background: linear-gradient(90deg,white,black);
+    transition: 500ms;
+    cursor: pointer;
+    /* color: white; */
+}
+.HeroButton:nth-child(2){
+
+    color: green;
+    /* font-size: 100px; */
+    bottom:50px ;
+    scale: -1;
+
 }
