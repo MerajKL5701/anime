@@ -3,6 +3,16 @@ const subHero = document.getElementsByClassName("sub-hero")
 const h1 = document.getElementsByClassName("HeroButton")
 h1[1].style.opacity = "0"
 let bgsupport = 0
+
+setInterval(() => {
+    BGherotranslatefor()
+    if (bgsupport >= subHero.length - 1){
+        bgsupport = 0
+    }
+},4000)
+
+
+
 function BGherotranslatefor() {
     console.log("bgsupoort " + bgsupport + "subhero " + subHero.length);
     if (bgsupport < subHero.length - 1) {
