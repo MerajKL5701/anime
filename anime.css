@@ -86,9 +86,9 @@
 .HeroButton{
     position: absolute;
     bottom: 120px;
-    right: 50px;
+    right: 25px;
     z-index: 1;
-    width: 50px;
+    width: 25px;
     aspect-ratio: 1/1;
     background: linear-gradient(90deg,white,black);
     transition: 500ms;
