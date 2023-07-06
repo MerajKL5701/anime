@@ -1,7 +1,7 @@
 const bg = document.getElementsByClassName("bg")
 const subHero = document.getElementsByClassName("sub-hero")
 const h1 = document.getElementsByClassName("HeroButton")
-// h1[1].style.opacity = "0"
+h1[1].style.opacity = "0"
 let bgsupport = 0
 function BGherotranslatefor() {
     console.log("bgsupoort " + bgsupport + "subhero " + subHero.length);

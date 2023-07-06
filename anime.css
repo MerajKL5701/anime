@@ -88,7 +88,7 @@
     bottom: 120px;
     right: 25px;
     z-index: 1;
-    width: 25px;
+    width: 15px;
     aspect-ratio: 1/1;
     background: linear-gradient(90deg,white,black);
     transition: 500ms;
