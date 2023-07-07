@@ -6,15 +6,14 @@
     --mainasset: 0,100%,50%;
     --mainwhite: 0, 0%, 100%;
     --mainblack: 0, 0%, 0%;
+    --mainsecond:180,25%,25%;
 }
 body{
     background-color: hsla(var(--mainblack));
     color: hsl(var(--mainwhite));
     height: 10000px;
 }
-.heronav{
-    position: relative;
-}
+
 .hero{
     width: 100vw;
     overflow: hidden;
@@ -112,16 +111,8 @@ body{
     scale: -1;
 
 }
-/* nav  */
-nav{
-    position: absolute;
-    bottom: 0px;
-    z-index: 1000;
-}
-.navbar{
-    position: fixed;
-    top: 0px;
-}
+
+
 /* recommendted  */
 .recommented{
     /* height: 400px; */
@@ -131,9 +122,10 @@ nav{
     
 }
 .recommented h1{
-    font-size: 30px;
+    font-size: 15px;
     position: absolute;
-    /* top: 15px; */
+    text-transform: uppercase;
+    top: 15px;
     left: 25px;
 }
 .recommented .slider{
@@ -157,4 +149,13 @@ nav{
     /* outline: 3px black; */
     background-color: red;
  
+}
+/* nav  */
+nav{
+    position: fixed;
+    bottom: 0px;
+    z-index: 1000;
+    background-color: hsl(var(--mainsecond));
+    width: 1000%;
+    height: 60px
 }

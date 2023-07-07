@@ -11,16 +11,7 @@ setInterval(() => {
         bgsupport = 0
     }
 },8000)
-window.addEventListener("scroll",(() => {
-    const subHeroHeight = parseInt(getComputedStyle(subHero[0]).height)
-    console.log("scroll " + scrollY + " h" + subHeroHeight)
-    if (scrollY > subHeroHeight){
 
-        nav.classList.add("navbar")
-    } else {
-        nav.classList.remove("navbar")
-    }
-}))
 
 // hero bg change 
 
