@@ -7,6 +7,14 @@
     --mainwhite: 0, 0%, 100%;
     --mainblack: 0, 0%, 0%;
 }
+body{
+    background-color: hsla(var(--mainblack));
+    color: hsl(var(--mainwhite));
+    height: 10000px;
+}
+.heronav{
+    position: relative;
+}
 .hero{
     width: 100vw;
     overflow: hidden;
@@ -19,6 +27,7 @@
     grid-template-columns: repeat(5,100vw);
     width: 200vw;
     transition: 2000ms;
+
 
 }
 
@@ -37,7 +46,7 @@
 .sub-hero .black{
     height: 100%;
     width: 100%;
-    background: linear-gradient(90deg,hsla(var(--mainblack),0.7),hsla(var(--mainblack),0.2));
+    background: linear-gradient(hsla(var(--mainblack),0.2),hsla(var(--mainblack),1));
     z-index: 1;
 
 }
@@ -103,17 +112,49 @@
     scale: -1;
 
 }
+/* nav  */
+nav{
+    position: absolute;
+    bottom: 0px;
+    z-index: 1000;
+}
+.navbar{
+    position: fixed;
+    top: 0px;
+}
 /* recommendted  */
 .recommented{
-    height: 500px;
-    background-color: green;
+    /* height: 400px; */
     width: 100%;
+    position: relative;
     /* overflow: hidden; */
     
 }
+.recommented h1{
+    font-size: 30px;
+    position: absolute;
+    /* top: 15px; */
+    left: 25px;
+}
 .recommented .slider{
+    overflow: scroll;
+    position: absolute;
+    top: 50px;
     overflow-y: hidden;
-    overflow-x: scroll;
-    height: 400px;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
 
+}
+.recommented .slider::-webkit-scrollbar{
+    height: 0px;
+}
+.slider .card{
+    min-width: 125px;
+    height: 175px;
+    /* outline: 5px solid black; */
+    /* outline: 3px black; */
+    background-color: red;
+ 
 }
